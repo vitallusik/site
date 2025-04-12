@@ -1,114 +1,95 @@
-/* Общие стили */
-body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
-  background-color: #f4f4f4;
-  color: #333;
-}
-
-header {
-  background-color: #003366;
-  color: white;
-  padding: 10px 20px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-header .logo img {
-  height: 50px;
-}
-
-nav ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  display: flex;
-}
-
-nav ul li {
-  margin-left: 20px;
-}
-
-nav ul li a {
-  color: white;
-  text-decoration: none;
-  font-weight: bold;
-}
-
-nav ul li a:hover {
-  text-decoration: underline;
-}
-
-.banner {
-  position: relative;
-  text-align: center;
-}
-
-.banner img {
-  width: 100%;
-  height: auto;
-}
-
-.banner-text {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  color: white;
-  background-color: rgba(0, 0, 0, 0.5);
-  padding: 20px;
-}
-
-.banner-text h1 {
-  margin: 0;
-  font-size: 2.5em;
-}
-
-.banner-text p {
-  margin: 0;
-  font-size: 1.2em;
-}
-
-main {
-  padding: 20px;
-}
-
-h2 {
-  color: #003366;
-  border-bottom: 2px solid #003366;
-  padding-bottom: 10px;
-}
-
-.team-grid, .news-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 20px;
-  margin-top: 20px;
-}
-
-.team-member, .news-item {
-  background-color: white;
-  padding: 15px;
-  border-radius: 8px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  text-align: center;
-}
-
-.team-member img {
-  width: 100%;
-  border-radius: 8px;
-}
-
-.news-item h3 {
-  margin-top: 0;
-}
-
-footer {
-  background-color: #003366;
-  color: white;
-  text-align: center;
-  padding: 10px;
-  margin-top: 20px;
-}
+* {
+    box-sizing: border-box;
+  }
+  
+  body,
+  h1,
+  h2,
+  h3,
+  h4,
+  p {
+    margin: 0;
+    font-weight: normal;
+    font-size: 100%;
+    text-align: center;
+  }
+  
+  body {
+    min-width: 850px;
+    font-family: 'Open Sans', Arial, sans-serif;
+  }
+  
+  .header {
+    height: 100vh;
+    text-align: center;
+    background-color: #eee;
+    background-image: url(https://code.s3.yandex.net/web-code/images/freetrack/03/cover.png);
+    background-position: center;
+    background-size: cover;
+  }
+  
+  .header-title {
+    margin: auto;
+    color: white;
+    font-weight: 800;
+    font-size: 74px;
+    text-transform: uppercase;
+  }
+  
+  .overlay {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(95 13 238 / 0.5);
+  }
+  
+  .content {
+    width: 770px;
+    margin: 100px auto 50px;
+    font-size: 0;
+  }
+  
+  .card {
+    display: inline-block;
+    width: 360px;
+    margin-right: 50px;
+    margin-bottom: 50px;
+    border: 1px solid black;
+    padding: 25px 25px 30px;
+    box-shadow: 4px 4px 0 black;
+  }
+  
+  .no-right-margin {
+    margin-right: 0;
+  }
+  
+  .card-title {
+    margin-bottom: 10px;
+    font-weight: 800;
+    font-size: 31px;
+    text-align: center;
+    text-transform: uppercase;
+  }
+  
+  .card-text {
+    font-size: 18px;
+  }
+  
+  .card-image {
+    width: 100%;
+    margin-bottom: 20px;
+    border: 1px solid black;
+  }
+  
+  .footer {
+    display: flex;
+    height: 200px;
+    background-color: #5f0dee;
+  }
+  
+  .footer-author {
+    margin: auto;
+    color: white;
+    font-weight: 800;
+    font-size: 25px;
+  }
